@@ -33,7 +33,7 @@
 //reduce: executes a reducer function for array element. returns a single value: the function's accumulated result. does not execute the function for empty array elements. does not change the original array.
 
 //1.2
-const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand', 'England', 'Ethiopia']
+const countries = ['Finland', 'Sweden', 'Denmark','Norway', 'IceLand',  'England', 'Ethiopia']
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const products = [
@@ -119,6 +119,50 @@ const array = []
 //every: check all elements of the array satisfy the given condition or not.[all === true]
 
 //1.20
+// const areSomeTrue = names.some((names) => names.length > 7);
+// console.log(areSomeTrue)
+
+//1.21
+// const areEveryTrue = countries.every((countries) => countries.includes('land') );
+// console.log(areEveryTrue)
+
+//1.22
+//find: return the first array element that pass a certain test function. The find method takes a function as its parameter and the function itself takes three arguments: element, index, array itself.
+//findIndex: return the index of the first array element that pass a certain test function. takes a callback function which can take three parameter(element, index, and array).
+//***Difference: the find() returns element value, but findIndex() returns element index.
+
+//1.23
+// const findCountry = countries.find(function(country){
+//   return country.length > 6
+// });
+// console.log(findCountry)
+
+//1.24
+// const findCountryIndex = countries.findIndex(function(country){
+//   return country.length > 6
+// });
+// console.log(findCountryIndex)
+
+//1.25
+// const findCountryIndex = countries.findIndex(function(country){
+//   if(country === "Norway"){
+//     return country
+//   } else {
+//     return false
+//   }
+// });
+// console.log(findCountryIndex)
+
+//1.26
+// const findCountryIndex = countries.findIndex(function(country){
+// if(country === "Russia"){
+//  return country
+// } 
+// });
+// console.log(findCountryIndex)
+
+
+
 
 
 

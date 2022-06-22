@@ -145,6 +145,13 @@ const products = [
 // const filter1 = map1.filter(price => typeof price === 'number');//[3, 6, 8, 10]
 // const reduce1 = filter1.reduce((acc, cur) => acc + cur, 0)//27
 
+//2.2(Not solve)
+// const reduce1  = products.reduce((acc, cur) => acc + cur.price, 0);
+
+//2.3
+const pattern = 'land'
+const categorizeCountries = countries.filter(country => country.includes(pattern))
+console.log(categorizeCountries)
 
 
   </script>
